@@ -30,21 +30,18 @@ DELETE/quotes/:id - Deletes a quote made by the user.
 
 
 ## User Stories
-1. As a user, I should be able to query /quotes/:id route to GET all the quotes in that category (the categories will populate the designated area once I click the button to show them).
+1. As a user, I should be able to query /quotes/:category route to GET all the quotes in that category (the categories will populate the designated area once I click the button to show them).
 2. Once the quotes within that category are displaying, I should be able to select whichever quotes I want to add to my 'favorites' by posting to the /quotes route. 
-3. If I don't see any I like in that category, or even if I do and have saved those I do like, I still should be able to create my own if I choose to. If I do create my own, I should be able to save that by posting to the /quotes route.
-4. As a user, I should be able to update the quote I made by putting to the /quotes/:id route which will look for the specific id of my quote.
-5. As a user, I should be able to delete quotes I created myself or quotes I added to my favorites by deleting with the quotes/:id route which will find the id of that specific quote and delete it.
+3. As a user, I should be able to delete quotes I created myself or quotes I added to my favorites by deleting with the quotes/:id route which will find the id of that specific quote and delete it.
 
 #### MVP Goals
-1. (READ) This app should enable the user to retrieve author, id, text and category data once the user chooses the category of quote they wish to see.
+1. (READ) This app should enable the user to retrieve author, id, text and category data once the user chooses the category of quote they wish to see. Or if they choose the 'random' option of how many random quotes they would like to see.
 
 2. (CREATE) Next, the user shoud have the ability to save their favorite quotes to a data model with a single entity: "favorites" with the following fields:
 author,
 id, 
 text
-category
-Or create their own 'quote' with those fields.
+category.
 
 3. (UPDATE) Now, the user should be able to edit the saved quote, for example, they may want to truncate the text if it is too long and create an excerpt from it and re-save it.
 
