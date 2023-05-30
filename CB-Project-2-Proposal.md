@@ -17,7 +17,7 @@ GET/quotes/random - Retrieves any number of random quotes (up to 1000) that the 
 
 GET/quotes - Retrieves all of the categories of quotes available.
 
-GET/quotes/:id - Retrieves the quotes based on the category the user chooses.
+GET/quotes/:category - Retrieves the quotes based on the category the user chooses.
 
 ## Create
 POST/quotes - Saves an existing quote to the user's list or creates a new quote made by the user.
@@ -44,6 +44,7 @@ author,
 id, 
 text
 category
+Or create their own 'quote' with those fields.
 
 3. (UPDATE) Now, the user should be able to edit the saved quote, for example, they may want to truncate the text if it is too long and create an excerpt from it and re-save it.
 
