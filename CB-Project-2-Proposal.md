@@ -49,7 +49,7 @@ category
 
 4. (DELETE) Finally, the user should be able to delete the saved quote if they no longer want it in their favorites.
 
-5. To seed the database, I'll use the Famous Quotes API /quotes endpoint to retrieve a list of categories (after that specific button is pressed on client side) and then save these categories with their data in the database with their fields: author, id, text, category
+5. To seed the database, I'll use the Famous Quotes API /quotes endpoint to retrieve a list of categories (after that specific button is pressed on client side) and then save these categories with their data in the database with their fields: author, id, text, category.
 
 
 #### Stretch Goals
