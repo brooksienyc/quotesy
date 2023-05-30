@@ -12,14 +12,20 @@ quotesy
 
 ## Routes and models
 Routes for CRUD operations:
+## Read
 GET/quotes/random - Retrieves any number of random quotes (up to 1000) that the user requests.
+
 GET/quotes - Retrieves all of the categories of quotes available.
+
 GET/quotes/:id - Retrieves the quotes based on the category the user chooses.
 
+## Create
 POST/quotes - Saves an existing quote to the user's list or creates a new quote made by the user.
 
+## Update
 PUT/quotes/:id - Updates a quote made by the user.
 
+## Delete
 DELETE/quotes/:id - Deletes a quote made by the user.
 
 
@@ -31,19 +37,19 @@ DELETE/quotes/:id - Deletes a quote made by the user.
 5. As a user, I should be able to delete quotes I created myself or quotes I added to my favorites by deleting with the quotes/:id route which will find the id of that specific quote and delete it.
 
 #### MVP Goals
-(READ) This app should enable the user to retrieve author, id, text and category data once the user chooses the category of quote they wish to see.
+1. (READ) This app should enable the user to retrieve author, id, text and category data once the user chooses the category of quote they wish to see.
 
-(CREATE) Next, the user shoud have the ability to save their favorite quotes to a data model with a single entity: "favorites" with the following fields:
+2. (CREATE) Next, the user shoud have the ability to save their favorite quotes to a data model with a single entity: "favorites" with the following fields:
 author,
 id, 
 text
 category
 
-(UPDATE) Now, the user should be able to edit the saved quote, for example, they may want to truncate the text if it is too long and create an excerpt from it and re-save it.
+3. (UPDATE) Now, the user should be able to edit the saved quote, for example, they may want to truncate the text if it is too long and create an excerpt from it and re-save it.
 
-(DELETE) Finally, the user should be able to delete the saved quote if they no longer want it in their favorites.
+4. (DELETE) Finally, the user should be able to delete the saved quote if they no longer want it in their favorites.
 
-To seed the database, I'll use the Famous Quotes API /quotes endpoint to retrieve a list of categories (after that specific button is pressed on client side) and then save these categories with their data in the database with their fields: author, id, text, category
+5. To seed the database, I'll use the Famous Quotes API /quotes endpoint to retrieve a list of categories (after that specific button is pressed on client side) and then save these categories with their data in the database with their fields: author, id, text, category
 
 
 #### Stretch Goals
