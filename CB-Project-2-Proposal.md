@@ -20,13 +20,13 @@ GET/quotes - Retrieves all of the categories of quotes available.
 GET/quotes/:category - Retrieves the quotes based on the category the user chooses.
 
 ## Create
-POST/quotes - Saves an existing quote to the user's list or creates a new quote made by the user.
+POST/quotes - Saves an existing quote to the user's list. Bonus: creates a unique new quote made by the user.
 
 ## Update
-PUT/quotes/:id - Updates a quote made by the user.
+PUT/quotes/:id - Updates a quote saved by the user as a favorite. Bonus: Updates a unique quote created by the user.
 
 ## Delete
-DELETE/quotes/:id - Deletes a quote made by the user.
+DELETE/quotes/:id - Deletes a quote saved by the user. Bonus: deletes a unique quote created by the user.
 
 
 ## User Stories
