@@ -40,6 +40,7 @@ Here are a few screenshots!
 
 
 ## MVP Goals/Stretch Goals/What's Next
+- I would like to implement the use of categories and give users the option to choose exactly what they are looking for.
 - I would like to add onto the functionality and provide a favorites option so the user can perform CRUD operations on those items.
 - I would like to add the author's image and a brief bio about them when their quote appears so their words come to life.
 - I would like to add a user/pass so the user can conveniently go back to the app and see their selections.
