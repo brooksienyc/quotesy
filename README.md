@@ -12,7 +12,7 @@ This app comes from my love of quotes, stories and ideas.
 ## Screenshots
 Here are a few screenshots!
 
-<img style="width: 25%; height: 25%;" src="/assets/Wireframe_1.png"/><img style="width: 25%; height: 25%;" src="/assets/Wireframe_2.png" /><img style="width: 25%; height: 25%;" src="/assets/Wireframe_3.png" /><img style="width: 25%; height: 25%;" src="/assets/Wireframe_4.png" /><img style="width: 25%; height: 25%;" src="/assets/Wireframe_5.png" />
+<img style="width: 33%; height: 33%;" src="/assets/Wireframe_1.png"/><img style="width: 33%; height: 33%;" src="/assets/Wireframe_2.png" /><img style="width: 33%; height: 33%;" src="/assets/Wireframe_3.png" /><img style="width: 33%; height: 33%;" src="/assets/Wireframe_4.png" /><img style="width: 33%; height: 33%;" src="/assets/Wireframe_5.png" />
 
 
 ## Technologies Used
