@@ -106,6 +106,14 @@ async function addQuote() {
             console.log("New quote index:", newIndex);
             // Update the displayed quote after adding
             // getAQuote();
+            setTimeout(() => {
+                location.reload();
+              }, 2000) 
+              Swal.fire({
+                icon: 'success',
+                // Applies the answer's number and the answer in the modal statment
+                title: "Yeah! You have successfully added your new quote!"
+              }) 
         } else {
             throw new Error("Unable to add new quote");
         }
@@ -115,13 +123,14 @@ async function addQuote() {
 }
 
 async function updateQuote() {
-    const id = selectedQuoteId;
+    // const id = selectedQuoteId;
+    const id = document.getElementById("newId").value;
     console.log(`This is the selectedQuoteId: ${selectedQuoteId}`)
     const newCategory = document.getElementById("category").value;
     const newAuthor = document.getElementById("author").value;
     const newText = document.getElementById("text").value;
     try {
-        const quote = await fetch(`http://localhost:3000/quote/${id}`,
+        const quote = await fetch(`http://localhost:3000/quotes/${id}`,
             {
                 method: "PUT",
                 headers: {
@@ -130,10 +139,18 @@ async function updateQuote() {
                 body: JSON.stringify({ category: newCategory, author: newAuthor, text: newText }),
             }
         )
-
+        console.log(response)
         if (response.ok) {
             // Update the displayed quote after updating
             quoteDiv.innerHTML = body.value
+            setTimeout(() => {
+                location.reload();
+              }, 2000) 
+              Swal.fire({
+                icon: 'success',
+                // Applies the answer's number and the answer in the modal statment
+                title: "Yeah! You have successfully updated your quote!"
+              }) 
         } else {
             throw new Error("Unable to update quote");
         }
@@ -143,8 +160,9 @@ async function updateQuote() {
 }
 
 async function deleteQuote() {
-    const id = selectedQuoteId;
-    console.log(selectedQuoteId)
+    // const id = selectedQuoteId;
+    // console.log(selectedQuoteId)
+    const id = document.getElementById("newId").value;
     try {
         const response = await fetch(`http://localhost:3000/quotes/${id}`,
             {
@@ -160,6 +178,14 @@ async function deleteQuote() {
         if (response.ok) {
 
             quoteDiv.innerHTML = ""
+            setTimeout(() => {
+                location.reload();
+              }, 2000) 
+              Swal.fire({
+                icon: 'success',
+                // Applies the answer's number and the answer in the modal statment
+                title: "Yeah! You have successfully deleted your quote!"
+              }) 
         } else {
             throw new Error("Unable to delete quote");
         }
