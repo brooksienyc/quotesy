@@ -12,15 +12,7 @@ This app comes from my love of quotes, stories and ideas.
 ## Screenshots
 Here are a few screenshots!
 
-<img style="width: 25%; height: 25%;" src="/assets/Wireframe_1.png"/>
-
-<img style="width: 25%; height: 25%;" src="/assets/Wireframe_2.png" />
-
-<img style="width: 25%; height: 25%;" src="/assets/Wireframe_3.png" />
-
-<img style="width: 25%; height: 25%;" src="/assets/Wireframe_4.png" />
-
-<img style="width: 25%; height: 25%;" src="/assets/Wireframe_5.png" />
+<img style="width: 25%; height: 25%;" src="/assets/Wireframe_1.png"/><img style="width: 25%; height: 25%;" src="/assets/Wireframe_2.png" /><img style="width: 25%; height: 25%;" src="/assets/Wireframe_3.png" /><img style="width: 25%; height: 25%;" src="/assets/Wireframe_4.png" /><img style="width: 25%; height: 25%;" src="/assets/Wireframe_5.png" />
 
 
 ## Technologies Used
@@ -32,14 +24,14 @@ Here are a few screenshots!
 
 
 ## Getting Started
-Give it a go! 
-Use this repo and take 'er for a spin!:
-Routes:
-/quotes/create - CREATE a quote and it will save in the MongoDB
-/quotes/all - READ all quotes in MongoDB
-/quotes/:id - READ a specific quote by its ID
-/quotes/:id - UPDATE a specific quote by its ID
-/quotes/:id - DELETE a specific quote by its ID
+- Give it a go! 
+- Use this repo and take 'er for a spin!:
+- Routes:
+- /quotes/create - CREATE a quote and it will save in the MongoDB
+- /quotes/all - READ all quotes in MongoDB
+- /quotes/:id - READ a specific quote by its ID
+- /quotes/:id - UPDATE a specific quote by its ID
+- /quotes/:id - DELETE a specific quote by its ID
 
 - Simply click on 'Choose a Quote!' to display a random quote.
 - Fill out the form and select 'Add a new quote!' to add a new quote.
