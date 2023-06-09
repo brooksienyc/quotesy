@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotesy</title>
+    <script defer src="./app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="w-5/6 flex flex-wrap justify-center items-center mx-auto">
+    <div class="w-full mx-auto my-8 flex flex-wrap justify-center items-center">
+        <button id="get-random-quote" class="rounded-full bg-blue-400 lg:w-1/6 md:w-1/6 w-full text-white my-8 py-2">Choose a quote!</button>
+        <div id="quotes" class="mx-8"></div>
+       
+    </div>
+    <div id="quoteForm" class="w-full mx-auto my-8 text-center">
+        <button id="add-a-quote" class="rounded-full bg-blue-400 lg:w-1/5 md:w-1/5 w-full text-white my-8 py-2 mr-8">Add a new quote!</button>
+        <button id="update-a-quote" class="rounded-full bg-blue-400 lg:w-1/5 md:w-1/5 w-full text-white my-8 py-2 mr-8">Update this quote!</button>
+        <button id="delete-a-quote" class="rounded-full bg-blue-400 lg:w-1/5 md:w-1/5 w-full text-white my-8 py-2">Delete this quote!</button>
+        <form class="text-left">
+            <div class="mb-6">
+                <label for="newId" class="block mb-2 font-bold text-gray-700">Id:</label>
+                <input type="text" id="newId" name="newId" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+            </div>
+            <div class="mb-6">
+                <label for="category" class="block mb-2 font-bold text-gray-700">Category:</label>
+                <input type="text" id="category" name="category" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+            </div>
+            <div class="mb-6">
+                <label for="author" class="block mb-2 font-bold text-gray-700">Author:</label>
+                <input type="text" id="author" name="author" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500">
+            </div>
+            <div class="mb-6">
+                <label for="text" class="block mb-2 font-bold text-gray-700">Text:</label>
+                <textarea id="text" name="text" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500"></textarea>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
